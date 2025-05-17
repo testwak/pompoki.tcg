@@ -1,17 +1,17 @@
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 
 const images = [
-    'https://github.com/testwak/pompoki.tcg/blob/main/image/card2.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/image/card4.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/image/card3.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/image/card5.GIF?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/image/card6.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/image/card7.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/image/card8.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/image/card9.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/image/card10.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/image/card11.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/image/card12.PNG?raw=true',
+    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card2.PNG?raw=true',
+    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card4.PNG?raw=true',
+    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card3.PNG?raw=true',
+    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card5.GIF?raw=true',
+    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card6.PNG?raw=true',
+    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card7.PNG?raw=true',
+    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card8.PNG?raw=true',
+    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card9.PNG?raw=true',
+    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card10.PNG?raw=true',
+    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card11.PNG?raw=true',
+    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card12.PNG?raw=true',
 ];
 
 export default function HomePage() {
