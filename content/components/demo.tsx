@@ -3,7 +3,7 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "docs/components/ui/accordion";
+} from "@/components/ui/accordion";
 
 interface AccordionEntry {
     title: string;

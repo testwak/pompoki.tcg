@@ -61,23 +61,12 @@
 /*-------- Signature Fonts ---------*/
 @font-face {
     font-family: 'PmPmFont';
-    src: url('fonts/gg_black.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'CA';
-    src: url('fonts/american_captain.ttf') format('truetype');
+    src: url('/fonts/gg_black.ttf') format('truetype');
 }
 
 .font-1 {
     font-family: 'PmPmFont', system-ui;
     letter-spacing: 0.7px;
-    font-weight: lighter;
-}
-
-.font-2 {
-    font-family: 'CA', system-ui;
-    letter-spacing: 0;
     font-weight: lighter;
 }
 
@@ -94,35 +83,5 @@
 } 
 
 /*--------- Currency Icons --------*/
-
-.icon-coin {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('image/pmpm-credit.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-.icon-credit {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url('image/pmpm-credit.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon-dice {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url('image/pmpm-dice.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
   
