@@ -1,8 +1,7 @@
 import { DocsLayout, type DocsLayoutProps } from 'fumadocs-ui/layouts/docs';
 import type { ReactNode } from 'react';
-import { baseOptions, linkItems } from 'app/layout.config';
+import { baseOptions, linkItems } from '@/app/layout.config';
 import { source } from 'lib/source';
-import { Fallback } from '@radix-ui/react-avatar';
 import { Suspense } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
 

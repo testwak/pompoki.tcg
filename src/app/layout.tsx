@@ -1,7 +1,7 @@
 import './global.css';
 import type { Viewport } from 'next';
 import { baseUrl, createMetadata } from 'lib/metadata';
-import { Body } from 'app/layout.client';
+import { Body } from '@/app/layout.client';
 import { Provider } from './provider';
 import type { ReactNode } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
