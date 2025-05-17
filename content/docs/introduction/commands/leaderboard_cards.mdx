@@ -1,0 +1,23 @@
+---
+title: / leaderboard cards
+
+---
+
+import { TypeTable } from 'fumadocs-ui/components/type-table';
+
+<TypeTable
+  type={{
+    user: {
+      description:
+        'Selects a Discord user from dropdown for targeting or interaction.',
+      type: 'discord.Member',
+      default: 'author',
+    },
+    filter: {
+      description:
+        'Filtering achievement progress by status.',
+      type: 'choices',
+      default: 'all',
+    },
+  }}
+/>

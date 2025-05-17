@@ -1,0 +1,15 @@
+{
+    "title": "Pom Documentation V1",
+    "description": "Beta Release",
+    "icon": "Building",
+    "root": true,
+    "pages": [
+      "---Introduction---",
+      "index",
+      "tos",
+      "faq",
+      "---Other---",
+      "aliases",
+      "commands"
+    ]
+  }

@@ -1,0 +1,30 @@
+---
+title: FAQ
+description: Frequently asked questions
+---
+
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
+
+
+<Accordions>
+<Accordion title={<span className="text-base font-semibold">Why Send Messages isn't enough for Pompoki?</span>} id="1">
+<div className="text-base">
+Giving a Discord bot the **Send Messages** permission is only the first step toward enabling it to function properly. While this allows the bot to post messages in a channel, it doesn't give it the ability to manage those messages or use custom features that many bots rely on. 
+
+<br></br> For **Pompoki** to work as intended, it also needs the **Manage Messages** and **Use External Emojis** permissions. The **Manage Messages** permission allows the bot to delete or edit its own messages—for example, to clean up buttons after they're used or to update interaction content. Without it, the bot may leave behind outdated or cluttered messages. Meanwhile, **Use External Emojis** (sometimes called "Use Custom Emoji") is essential because Pompoki uses it own emojis for its cards and gameplay visuals. 
+
+<br></br> Without this permission, many of the bot’s messages will appear broken or incomplete. To ensure full functionality, please make sure Pompoki has all three of these permissions in any channel it operates in.
+</div>
+</Accordion>
+
+<Accordion title={<span className="text-base font-semibold">How do I lock the specific card?</span>} id="2">
+    <div className="text-base">
+    Two ways you can do:
+        <br></br> `/view card` ➜ Edit Your Card Here! ➜  Unlock/Lock This Card
+        <br></br> OR `/card colleciton` ➜ More Sections! ➜ Display Card Information ➜ Check on edit button ➜ Follow above one!
+       
+    </div>
+</Accordion>
+
+</Accordions>
+
