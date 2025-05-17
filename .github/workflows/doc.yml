@@ -1,0 +1,31 @@
+name: Build Docs Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github
+            src
+            docs  # 👈 Add this if your site is in `docs/`
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: docs  # 👈 If your package.json is in docs/
+
+      - name: Build site
+        run: npm run build
+        working-directory: docs
