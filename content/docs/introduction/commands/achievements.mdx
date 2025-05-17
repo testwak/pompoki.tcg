@@ -5,43 +5,28 @@ title: / achievement
 
 import { TypeTable } from 'fumadocs-ui/components/type-table';
 
-<TypeTable
-  type={{
-    user: {
-      description:
-        'Selects a Discord user from dropdown for targeting or interaction.',
-      type: 'discord.Member',
-      default: 'author',
-    },
-    filter: {
-      description:
-        'Filtering achievement progress by status.',
-      type: 'choices',
-      default: 'all',
-    },
-  }}
-/>
+export const types = {
+  user: {
+    description:
+      'Selects a Discord user from dropdown for targeting or interaction.',
+    type: 'discord.Member',
+    default: 'author',
+  },
+  filter: {
+    description: 'Filtering achievement progress by status.',
+    type: 'choices',
+    default: 'all',
+  },
+};
+
+<TypeTable type={types} />
+
+
 
 | Filter    | Example                       | Usage |
 | --------- | --------------------------------- | ----- |
 | All       | `/achievement filter: all`  | Getting all type of achievements      |
 
+
 ## Category
 
-<TypeTable
-  type={{
-    user: {
-        title: 'First Pom',
-      description:
-        'Selects a Discord user from dropdown for targeting or interaction.',
-      type: 'discord.Member',
-      default: 'author',
-    },
-    filter: {
-      description:
-        'Filtering achievement progress by status.',
-      type: 'choices',
-      default: 'all',
-    },
-  }}
-/>
