@@ -15,7 +15,6 @@ jobs:
           sparse-checkout: |
             .github
             src
-            docs  # 👈 Add this if your site is in `docs/`
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -24,8 +23,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: docs  # 👈 If your package.json is in docs/
 
       - name: Build site
         run: npm run build
-        working-directory: docs

@@ -1,5 +1,6 @@
 - uses: actions/checkout@v4
   with:
     sparse-checkout: |
-      .github
+      docs
       src
+      .github
