@@ -1,4 +1,5 @@
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
+import React from "react";
 
 const images = [
     'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card2.PNG?raw=true',
@@ -22,7 +23,7 @@ export default function HomePage() {
                     @POMPOKI.tcg
                 </h2>
                 <p className="relative z-20 mx-auto max-w-2xl py-8 text-center text-sm text-neutral-200 md:text-base">
-                Best TCG Discord Bot for Hoyoverse-Games Communication <span className='font-1'>:^|</span>
+                Cool hoyo-themed tcg discord bot for gacha addicted persona! <span className='font-1'>:^|</span>
                 </p>
 
                 <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-4">

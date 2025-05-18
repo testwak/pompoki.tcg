@@ -25,12 +25,12 @@ export const ThreeDMarquee = ({
             style={{ backgroundColor: "#2b2d31" }}
         >
             <div className="flex w-full items-center justify-center">
-                <div className="w-full max-w-7xl px-4 sm:px-8">
+                <div className="w-full max-w-7xl px-4 sm:px-1">
                     <div
                         style={{
-                            transform: "rotateX(50deg) rotateY(0deg) rotateZ(-45deg) scale(1.7)",
+                            transform: "rotateX(40deg) rotateY(0deg) rotateZ(-45deg) scale(2)",
                         }}
-                        className="relative top-0 right-[40%] grid size-full origin-top grid-cols-5 gap-8 transform-3d"
+                        className="relative top-10 right-[40%] grid size-full origin-top grid-cols-5 gap-6 transform-3d"
                     >
                         {chunks.map((subarray, colIndex) => (
                             <motion.div
@@ -39,7 +39,7 @@ export const ThreeDMarquee = ({
                                     ease: "easeInOut",
                                     duration: colIndex % 2 === 0 ? 20 : 25,
                                     repeat: Infinity,
-                                    repeatType: "mirror",
+                                    repeatType: "reverse",
                                 }}
                                 key={colIndex + "marquee"}
                                 className="flex flex-col items-start gap-8"
@@ -54,7 +54,7 @@ export const ThreeDMarquee = ({
                                             transition={{ duration: 0.3, ease: "easeInOut" }}
                                             src={image}
                                             alt={`Image ${imageIndex + 1}`}
-                                            className="w-full max-w-[300px] aspect-[600/1000] rounded-lg object-cover ring ring-gray-950/5 hover:shadow-2xl"
+                                            className="w-full max-w-[300px] aspect-[700/1000] rounded-lg object-cover ring ring-gray-950/5 hover:shadow-2xl"
                                             draggable={false}
                                         />
                                     </div>
