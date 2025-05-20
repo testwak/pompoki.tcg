@@ -9,7 +9,7 @@ import {
 export const linkItems: LinkItemType[] = [
     {
         type: 'icon',
-        url: 'https://github.com/fuma-nama/fumadocs',
+        url: 'https://github.com/testwak/pompoki.tcg',
         text: 'Github',
         icon: (
             <svg role="img" viewBox="0 0 24 24" fill="currentColor">
