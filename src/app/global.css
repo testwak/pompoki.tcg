@@ -6,6 +6,7 @@
 /* Removed @custom-variant as it is not recognized */
 
 :root {
+    --radius: 0.625rem;
     --color-fd-background: hsl(0, 0%, 100%);
     --signature-color-1: #a0312d;
     --signature-color-2: #FCF7F4;
@@ -19,31 +20,16 @@
     --card-foreground: var(--signature-color-2);
     --popover: #2b2d31;
     --popover-foreground: var(--signature-color-2);
-    --primary: #ffffff;
+    --primary: var(--signature-color-2);
     --primary-foreground: #fdfdfd;
     --secondary: #a0312d; /* search bar, step dot, etc... */
     --secondary-foreground: var(--signature-color-2); /* step number, etc... */
-    --muted: #762320; /* code highlight box */
+    --muted: var(--signature-color-1); /* code highlight box */
     --muted-foreground: #ffffff75;
     --accent: #a0312d;
     --accent-foreground: #ffffff;
     --destructive: #4000ff;
     --border: #84221e;
-    --input: var(--tc);
-    --ring: #c8ff00;
-    --chart-1: #f4ff1b;
-    --chart-2: #f4ff1b;
-    --chart-3: #f4ff1b;
-    --chart-4: #f4ff1b;
-    --chart-5: #f4ff1b;
-    --sidebar: #f4ff1b;
-    --sidebar-foreground: #a0312d;
-    --sidebar-primary: #000000;
-    --sidebar-primary-foreground: #f4ff1b;
-    --sidebar-accent: #f4ff1b;
-    --sidebar-accent-foreground: #fff;
-    --sidebar-border: #f4ff1b;
-    --sidebar-ring: #6f211e;
 }
 
 @layer base {
