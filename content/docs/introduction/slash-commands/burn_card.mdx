@@ -1,0 +1,43 @@
+---
+title: / burn card
+
+---
+
+import { TypeTable } from 'fumadocs-ui/components/type-table';
+
+export const types = {
+  name: {
+    description:
+      'Card Name',
+    type: 'string',
+    default: 'undefined',
+  },
+  rarity: {
+    description:
+      'Card Rarity 1 -> 5',
+    type: 'int',
+    default: 'undefined',
+  },
+  amount: {
+    description:
+      'How much would you like to burn?',
+    type: 'int',
+    default: 'undefined',
+  },
+};
+
+<TypeTable type={types} />
+
+
+| Example                       | Usage | Allowed | NOT Allowed |
+| --------------------------------- | ----- | ---- | --- |
+| `/burn card name:dhil rarity:3 amount:7`  | Viewing your or another user's balance.      | `[option: name]` aliases, uppercase, lowercase, space | `[option: rarity, amount]` integar below or equal 0 |
+
+## About
+It's important to remember that you can't burn a locked/event card.
+However, you can burn a card even if you have a dupe.
+Keep in mind that this action is irreversible, so think carefully before burning any cards during the game.  
+This feature adds another layer of strategy, as players must weigh the benefits of burning a card against the potential impact on their overall game plan. 
+Understanding the consequences of burning cards, we do not redo.
+
+<p className="noteBox"><strong>Note:</strong> Even if you burn all of your card's rank, exp, and progress **WON'T BE GONE** and will remain intact!</p>

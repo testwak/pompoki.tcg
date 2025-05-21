@@ -1,0 +1,70 @@
+---
+title: / card colleciton
+
+---
+
+import { TypeTable } from 'fumadocs-ui/components/type-table';
+
+export const types = {
+    user: {
+        description:
+        'Selects a Discord user from dropdown for targeting or interaction.',
+        type: 'discord.Member',
+        default: 'author',
+    },
+    card_name: {
+        description:
+        'Card Name',
+        type: 'string',
+        default: 'all',
+    },
+    rarity: {
+        description:
+        'Card Rarity 1 -> 5',
+        type: 'int',
+        default: 'all',
+    },
+    sort: {
+        description:
+        'Card Rarity 1 -> 5',
+        type: 'int',
+        default: 'all',
+    },
+    event: {
+        description:
+        'Card Rarity 1 -> 5',
+        type: 'int',
+        default: 'all',
+    },
+    series: {
+        description:
+        'Card Rarity 1 -> 5',
+        type: 'int',
+        default: 'all',
+    },
+    custom_name: {
+        description:
+        'Card Rarity 1 -> 5',
+        type: 'int',
+        default: 'pass',
+    },
+    is_locked: {
+        description:
+        'Card Rarity 1 -> 5',
+        type: 'int',
+        default: 'pass',
+    },
+    had_badge: {
+        description:
+        'Card Rarity 1 -> 5',
+        type: 'int',
+        default: 'pass',
+    },
+};
+
+<TypeTable type={types} />
+
+
+| Example                       | Usage |
+| --------------------------------- | ----- |
+| `/balance user: @testwak`  | Viewing your or another user's balance.      |

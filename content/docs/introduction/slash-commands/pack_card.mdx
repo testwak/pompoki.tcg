@@ -1,0 +1,27 @@
+---
+title: / pack card
+
+---
+import { TypeTable } from 'fumadocs-ui/components/type-table';
+
+export const types = {
+  name: {
+    description:
+      'Card Name',
+    type: 'string',
+    default: 'undefined',
+  },
+  rarity: {
+    description:
+      'Card Rarity 1 -> 5',
+    type: 'int',
+    default: 'undefined',
+  },
+};
+
+<TypeTable type={types} />
+
+
+| Example                       | Usage |
+| --------------------------------- | ----- |
+| `/balance user: @testwak`  | Viewing your or another user's balance.      |

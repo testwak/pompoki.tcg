@@ -1,0 +1,22 @@
+---
+title: / balance
+
+---
+
+import { TypeTable } from 'fumadocs-ui/components/type-table';
+
+export const types = {
+  user: {
+    description:
+      'Selects a Discord user from dropdown for targeting or interaction.',
+    type: 'discord.Member',
+    default: 'author',
+  },
+};
+
+<TypeTable type={types} />
+
+
+| Example                       | Usage |
+| --------------------------------- | ----- |
+| `/balance user: @testwak`  | Viewing your or another user's balance.      |

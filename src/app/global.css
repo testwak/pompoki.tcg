@@ -70,4 +70,51 @@
 
 /*--------- Currency Icons --------*/
 
+.coin-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url('/image/pmpm-coin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: inline-block;
+    position: relative;
+    bottom: -7px;
+  }
   
+
+.dice-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url('/image/pmpm-dice.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: inline-block;
+    position: relative;
+    bottom: -7px;
+}
+
+.credit-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url('/image/pmpm-credit.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: inline-block;
+    position: relative;
+    bottom: -7px;
+}
+
+.box-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url('/image/pmpm-box.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: inline-block;
+    position: relative;
+    bottom: -7px;
+}
