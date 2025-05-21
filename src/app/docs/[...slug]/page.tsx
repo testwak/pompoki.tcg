@@ -15,7 +15,7 @@ export default async function Page(props: {
 
     return (
         <DocsPage toc={page.data.toc} full={page.data.full} tableOfContent={{style: 'clerk'}}>
-            <DocsTitle className='font-1' style={{fontSize: "2.5em"}}>{page.data.title}</DocsTitle>
+            <DocsTitle className='font-1' style={{fontSize: "1.9em auto"}}>{page.data.title}</DocsTitle>
             <DocsDescription>{page.data.description}</DocsDescription>
             <DocsBody>
                 <MDXContent
