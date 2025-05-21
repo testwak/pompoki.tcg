@@ -13,6 +13,7 @@ export const metadata = createMetadata({
     },
     description: 'POMPOKI documentation site',
     metadataBase: baseUrl,
+    color: '#a0312d'
 });
 
 const geist = Geist({
@@ -27,8 +28,8 @@ const mono = Geist_Mono({
 
 export const viewport: Viewport = {
     themeColor: [
-        { media: '(prefers-color-scheme: dark)', color: '#0A0A0A' },
-        { media: '(prefers-color-scheme: light)', color: '#fff' },
+        { media: '(prefers-color-scheme: dark)', color: '#a0312d' },
+        { media: '(prefers-color-scheme: light)', color: '#a0312d' },
     ],
 };
 
