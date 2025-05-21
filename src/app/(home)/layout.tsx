@@ -13,7 +13,8 @@ export default function Layout({ children }: { children: ReactNode }) {
         },
       ]}
     >
-      {children}
+        <meta name="theme-color" content="#a0312d" />
+        {children}
     </HomeLayout>
   );
 }
