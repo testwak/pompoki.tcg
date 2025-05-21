@@ -13,6 +13,7 @@ export const metadata = createMetadata({
     },
     description: 'POMPOKI documentation site',
     metadataBase: baseUrl,
+    themeColor: '#a0312d', // ← ✅ this sets the embed/mobile browser color
 });
 
 const geist = Geist({

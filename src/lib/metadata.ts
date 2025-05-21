@@ -3,9 +3,6 @@ import type { Metadata } from 'next/types';
 export function createMetadata(override: Metadata): Metadata {
   return {
     ...override,
-    title: 'POMPOKI.tcg',
-    description: 'Official Pompoki discord bot site',
-    themeColor: '#a0312d', // ← ✅ this sets the embed/mobile browser color
     openGraph: {
       title: override.title ?? undefined,
       description: override.description ?? undefined,
