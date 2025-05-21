@@ -8,10 +8,10 @@ import { Geist, Geist_Mono } from 'next/font/google';
 
 export const metadata = createMetadata({
     title: {
-        template: '%s | Fumadocs',
-        default: 'Fumadocs',
+        template: '%s | POMPOKI.tcg',
+        default: 'POMPOKI.tcg',
     },
-    description: 'The Next.js framework for building documentation sites',
+    description: 'POMPOKI documentation site',
     metadataBase: baseUrl,
 });
 
