@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       ]}
     >
         <meta name="theme-color" content="#a0312d" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#a0312d" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         {children}
     </HomeLayout>
   );
