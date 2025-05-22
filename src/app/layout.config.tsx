@@ -33,7 +33,6 @@ export const baseOptions: BaseLayoutProps = {
                 </span>
             </>
         ),
-        transparentMode: 'top',
-
+        transparentMode: "top"
     },
 };

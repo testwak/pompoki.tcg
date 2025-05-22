@@ -9,6 +9,7 @@ const docsOptions: DocsLayoutProps = {
     ...baseOptions,
     nav: {
         ...baseOptions.nav,
+        transparentMode: "none",
     },
     tree: source.pageTree,
     links: [linkItems[linkItems.length - 1]],

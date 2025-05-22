@@ -18,7 +18,7 @@
     --foreground: var(--signature-color-2); /* accordion etc..*/
     --card: var(--signature-color-1);
     --card-foreground: var(--signature-color-2);
-    --popover: #2b2d31;
+    --popover: #88302E;
     --popover-foreground: var(--signature-color-2);
     --primary: var(--signature-color-2);
     --primary-foreground: #fdfdfd;
@@ -30,6 +30,7 @@
     --accent-foreground: #ffffff;
     --destructive: #a0312d;
     --border: #84221e;
+    --ring: #00ff08;
 }
 
 @layer base {
@@ -39,8 +40,10 @@
     }
 
     body {
-        background-color: var(--background);
+        background: linear-gradient(to bottom, #88302E 0%, #2b2d31 90%) !important;
+        background-color: #88302E !important;
         color: var(--foreground);
+        overscroll-behavior-y: none;
     }
 }
 

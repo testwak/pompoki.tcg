@@ -14,8 +14,8 @@ export default async function Page(props: {
     const MDXContent = page.data.body;
 
     return (
-        <DocsPage toc={page.data.toc} full={page.data.full} tableOfContent={{style: 'clerk'}}>
-            <DocsTitle className='font-1' style={{fontSize: "1.9em auto"}}>{page.data.title}</DocsTitle>
+        <DocsPage toc={page.data.toc} full={page.data.full} tableOfContent={{style: 'clerk', single: true, }}>
+            <DocsTitle className='font-1' style={{fontSize: "2.5em"}}>{page.data.title}</DocsTitle>
             <DocsDescription>{page.data.description}</DocsDescription>
             <DocsBody>
                 <MDXContent
@@ -24,20 +24,6 @@ export default async function Page(props: {
                         a: createRelativeLink(source, page),
                     })}
                 />
-                <main className="container flex flex-col items-center py-16 text-center z-[2]">
-                    <div className="absolute inset-0 z-[-1] overflow-hidden duration-1000 animate-in fade-in [perspective:2000px]">
-                        <div
-                        className="absolute bottom-[0%] left-1/2 size-[1200px] origin-bottom bg-fd-primary/30 opacity-10"
-                        style={{
-                            transform: 'rotateX(25deg) translate(-50%, 600px)',
-                            backgroundImage:
-                            'radial-gradient(50% 50% at center,transparent,#2b2d31), repeating-linear-gradient(to right,var(--color-fd-primary),var(--color-fd-primary) 1px,transparent 2px,transparent 100px), repeating-linear-gradient(to bottom,var(--color-fd-primary),var(--color-fd-primary) 2px,transparent 3px,transparent 100px)',
-                        }}
-                        />
-                    </div>
-
-                </main>
-
 
             </DocsBody>
         </DocsPage>
