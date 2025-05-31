@@ -40,8 +40,7 @@
     }
 
     body {
-        background: linear-gradient(to bottom, #88302E 0%, #2b2d31 90%) !important;
-        background-color: #88302E !important;
+        background-color: #2b2d31 !important;
         color: var(--foreground);
         overscroll-behavior-y: none;
     }

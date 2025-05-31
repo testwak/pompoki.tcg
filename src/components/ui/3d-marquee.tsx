@@ -49,7 +49,7 @@ export const ThreeDMarquee = ({
                                     <div className="relative" key={imageIndex + image}>
                                         <GridLineHorizontal className="-top-4" offset="20px" />
                                         <motion.img
-                                            loading="eager"
+                                            loading="lazy"
                                             whileHover={{ y: -10 }}
                                             transition={{ duration: 0.3, ease: "easeInOut" }}
                                             src={image}

@@ -38,7 +38,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             lang="en"
             className={`${geist.variable} ${mono.variable}`}
             suppressHydrationWarning
-            style={{background:'linear-gradient(to top, #88302E 0%, #2b2d31 90%)'}}
         >
             <Body>
 
