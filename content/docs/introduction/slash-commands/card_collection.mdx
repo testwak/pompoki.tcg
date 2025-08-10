@@ -12,52 +12,58 @@ export const types = {
         type: 'discord.Member',
         default: 'author',
     },
+    sort: {
+        description:
+        'Other filters',
+        type: 'str | choices',
+        default: 'all',
+    },
+    event: {
+        description:
+        '',
+        type: 'str | choices',
+        default: 'all',
+    },
+    series: {
+        description:
+        '',
+        type: 'str | choices',
+        default: 'all',
+    },
     card_name: {
         description:
-        'Card Name',
-        type: 'string',
+        'Which character card would you like to sort? You can also use aliases!',
+        type: 'string | choices | aliases',
         default: 'all',
     },
     rarity: {
         description:
         'Card Rarity 1 -> 5',
-        type: 'int',
-        default: 'all',
-    },
-    sort: {
-        description:
-        'Card Rarity 1 -> 5',
-        type: 'int',
-        default: 'all',
-    },
-    event: {
-        description:
-        'Card Rarity 1 -> 5',
-        type: 'int',
-        default: 'all',
-    },
-    series: {
-        description:
-        'Card Rarity 1 -> 5',
-        type: 'int',
+        type: 'int | choices',
         default: 'all',
     },
     custom_name: {
         description:
-        'Card Rarity 1 -> 5',
-        type: 'int',
+        'List of all the card that has the nickname.',
+        type: 'string',
         default: 'pass',
     },
     is_locked: {
         description:
-        'Card Rarity 1 -> 5',
-        type: 'int',
+        'Filter all unlocked/locked cards. Empty = Display both locked/unlocked cards.',
+        type: 'boolean',
         default: 'pass',
     },
-    had_badge: {
+    is_albumable: {
         description:
-        'Card Rarity 1 -> 5',
-        type: 'int',
+        'Check all available cards you could be added to the album.',
+        type: 'boolean',
+        default: 'pass',
+    },
+    has_badge: {
+        description:
+        'Check all available cards that have the badge.',
+        type: 'boolean',
         default: 'pass',
     },
 };
@@ -67,4 +73,6 @@ export const types = {
 
 | Example                       | Usage |
 | --------------------------------- | ----- |
-| `/balance user: @testwak`  | Viewing your or another user's balance.      |
+| `/card collection user: @testwak`  | Viewing your or another user's card colleciton.      |
+
+
