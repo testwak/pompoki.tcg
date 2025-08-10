@@ -1,5 +1,5 @@
 {
-    "title": "Documentation (Unfinished)",
+    "title": "Documentation V1",
     "description": "Beta Pre-Release",
     "icon": "home",
     "root": true,
@@ -8,9 +8,9 @@
       "index",
       "tos",
       "faq",
+      "thank_you",
       "---Other---",
       "aliases",
-      "slash-commands",
-      "cards"
+      "slash-commands"
     ]
   }

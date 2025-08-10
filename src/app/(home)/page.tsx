@@ -2,17 +2,14 @@ import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 import React from "react";
 
 const images = [
-    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card2.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card4.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card3.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card5.GIF?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card6.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card7.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card8.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card9.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card10.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card11.PNG?raw=true',
-    'https://github.com/testwak/pompoki.tcg/blob/main/public/image/card12.PNG?raw=true',
+    'https://static.wikia.nocookie.net/pompoki/images/6/6e/Sirin_hi3_20250810095011.png',
+    'https://static.wikia.nocookie.net/pompoki/images/a/a3/Algea-tcg_20250110221203.png',
+    'https://static.wikia.nocookie.net/pompoki/images/3/3b/Aven-5s.gif',
+    'https://static.wikia.nocookie.net/pompoki/images/3/32/Danheng-il_tcg_20240421020038.PNG',
+    'https://static.wikia.nocookie.net/pompoki/images/1/19/Cerydra_tcg_3s.PNG',
+    'https://static.wikia.nocookie.net/pompoki/images/3/36/Alexandrina_tcg_4s.png',
+    'https://static.wikia.nocookie.net/pompoki/images/9/92/Astra_tcg_3s.png',
+    'https://static.wikia.nocookie.net/pompoki/images/1/14/Hugo_3s.PNG'
 ];
 
 export default function HomePage() {

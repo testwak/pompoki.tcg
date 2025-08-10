@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.0.0",
     "@heroui/alert": "^2.2.19",
     "@heroui/system": "^2.4.15",
     "@heroui/theme": "^2.4.15",
@@ -29,6 +30,7 @@
     "@radix-ui/react-slot": "^1.2.2",
     "@radix-ui/react-tooltip": "^1.2.6",
     "@types/canvas-confetti": "^1.9.0",
+    "antd": "^5.26.7",
     "canvas-confetti": "^1.9.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
