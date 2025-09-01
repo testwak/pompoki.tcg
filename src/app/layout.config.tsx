@@ -25,7 +25,7 @@ export const baseOptions: BaseLayoutProps = {
         title: (
             <>
                 <Avatar>
-                    <AvatarImage src="https://github.com/testwak/pompoki/blob/main/assets/images/logo.GIF?raw=true" alt="@pompoki.tcg" />
+                    <AvatarImage src="/image/logo.GIF" alt="@pompoki.tcg" />
                     <AvatarFallback> </AvatarFallback>
                 </Avatar>
                 <span className="font-medium [.uwu_&]:hidden [header_&]:text-[15px] font-1">

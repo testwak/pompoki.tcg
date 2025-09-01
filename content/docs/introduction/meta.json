@@ -1,8 +1,4 @@
 {
-    "title": "Documentation V1",
-    "description": "Beta Pre-Release",
-    "icon": "home",
-    "root": true,
     "pages": [
       "---Introduction---",
       "index",

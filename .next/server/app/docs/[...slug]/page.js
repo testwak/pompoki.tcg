@@ -6,7 +6,7 @@ runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__6a49e8c7._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_0a83f2df._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_forbidden-error_ea7ea172.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_unauthorized-error_c8949b27.js");
-runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__83fa1527._.js");
+runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__ea06d483._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_fumadocs-ui_dist_4cd29afd._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_tailwind-merge_dist_bundle-mjs_mjs_52025e23._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_lucide-react_dist_esm_icons_index_feaf6aa7.js");
