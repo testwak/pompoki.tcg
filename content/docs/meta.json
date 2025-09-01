@@ -1,4 +1,4 @@
 {   
-    "pages": ["introduction"],
+    "pages": ["introduction", "slash-commands"],
     "icon": "home"
 }

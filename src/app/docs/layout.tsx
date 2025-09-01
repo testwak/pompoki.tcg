@@ -1,6 +1,6 @@
 import { DocsLayout, type DocsLayoutProps } from 'fumadocs-ui/layouts/docs';
 import type { ReactNode } from 'react';
-import { baseOptions, linkItems } from '@/app/layout.config';
+import { baseOptions } from '@/app/layout.config';
 import { source } from '@/lib/source';
 import { Suspense } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -12,7 +12,6 @@ const docsOptions: DocsLayoutProps = {
         transparentMode: "none",
     },
     tree: source.pageTree,
-    links: [linkItems[linkItems.length - 1]],
     sidebar: {
         tabs: {
             transform(option, node) {

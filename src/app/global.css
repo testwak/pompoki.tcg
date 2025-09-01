@@ -10,6 +10,9 @@
     --color-fd-background: hsl(0, 0%, 100%);
     --signature-color-1: #a0312d;
     --signature-color-2: #FCF7F4;
+    --signature-color-3: #2b2d31;
+    --signature-color-4: #36393e;
+    --signature-color-5: #7c2a27;
     --tc: #00ff8c;
     --color-warning: var(--tc);
     --color-warning-foreground: var(--warning-foreground);
@@ -24,7 +27,7 @@
     --primary-foreground: #fdfdfd;
     --secondary: #a0312d; /* search bar, step dot, etc... */
     --secondary-foreground: var(--signature-color-2); /* step number, etc... */
-    --muted: var(--signature-color-1); /* code highlight box */
+    --muted: var(--signature-color-5); /* code highlight box */
     --muted-foreground: #ffffff75;
     --accent: #a0312d;
     --accent-foreground: #ffffff;
