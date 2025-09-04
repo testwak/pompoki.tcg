@@ -4,29 +4,37 @@ import { Body } from 'src/app/layout.client';
 import { Provider } from './provider';
 import type { ReactNode } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
-
 import { Metadata } from 'next';
-import { baseUrl } from '@/lib/metadata';
 
 const description = "Pompoki Bot is a Discord bot with a modern retro theme that serves as a trading card game (TCG) bot, allowing users to collect and trade cards from games like Genshin Impact, Honkai Star Rail, and Zenless Zone Zero. It includes features like a rarity and pity system, profile customization, and a wishlist for desired cards."
 
 export const metadata: Metadata = {
-    title: 'POMPOKI.tcg',
+    title: {
+        template: '%s | POMPOKI.tcg',
+        default: 'POMPOKI.tcg',
+    },
     description: description,
-    metadataBase: baseUrl,
+    metadataBase: new URL('https://pompoki.vercel.app'),
     openGraph: {
-        type: 'website',
-        url: baseUrl.toString(),
         title: 'POMPOKI.tcg',
         description: description,
+        url: 'https://pompoki.vercel.app',
+        siteName: 'POMPOKI.tcg',
+        type: 'website',
         images: [
             {
-                url: '/image/logo.GIF', // relative path resolves against metadataBase
-                width: 1200,
-                height: 630,
+                url: 'https://pompoki.vercel.app/image/logo.GIF', // your thumbnail
+                width: 400,
+                height: 400,
                 alt: 'POMPOKI.tcg thumbnail',
             },
         ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'POMPOKI.tcg',
+        description: description,
+        images: ['https://pompoki.vercel.app/image/logo.GIF'],
     },
 };
 
