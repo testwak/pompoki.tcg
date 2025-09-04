@@ -10,19 +10,19 @@ const description = "Pompoki Bot is a Discord bot with a modern retro theme that
 
 export const metadata = createMetadata({
     title: {
-        template: '%s | POMPOKI.tcg Documentation',
-        default: 'POMPOKI.tcg Documentation',
+        template: '%s | POMPOKI.tcg',
+        default: 'POMPOKI.tcg',
     },
     description: description,
     metadataBase: baseUrl,
     openGraph: {
-        title: 'POMPOKI.tcg Documentation',
+        title: 'POMPOKI.tcg',
         description: description,
         url: baseUrl.toString(),
         siteName: 'POMPOKI.tcg',
         images: [
             {
-                url: `${baseUrl}/image/log.GIF`, // your thumbnail path
+                url: `${baseUrl}/image/logo.GIF`, // your thumbnail path
                 width: 800,   // optional
                 height: 600,  // optional
                 alt: 'POMPOKI.tcg thumbnail', // optional
@@ -32,9 +32,9 @@ export const metadata = createMetadata({
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'POMPOKI.tcg Documentation',
+        title: 'POMPOKI.tcg',
         description: description,
-        images: [`${baseUrl}/image/log.GIF`],
+        images: [`${baseUrl}/image/logo.GIF`],
     },
 });
 
