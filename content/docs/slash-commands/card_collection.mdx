@@ -3,77 +3,60 @@ title: / card colleciton
 
 ---
 
-import { TypeTable } from 'fumadocs-ui/components/type-table';
+import EditIcon from '@mui/icons-material/Edit';
 
-export const types = {
-    user: {
-        description:
-        'Selects a Discord user from dropdown for targeting or interaction.',
-        type: 'discord.Member',
-        default: 'author',
-    },
-    sort: {
-        description:
-        'Other filters',
-        type: 'str | choices',
-        default: 'all',
-    },
-    event: {
-        description:
-        '',
-        type: 'str | choices',
-        default: 'all',
-    },
-    series: {
-        description:
-        '',
-        type: 'str | choices',
-        default: 'all',
-    },
-    card_name: {
-        description:
-        'Which character card would you like to sort? You can also use aliases!',
-        type: 'string | choices | aliases',
-        default: 'all',
-    },
-    rarity: {
-        description:
-        'Card Rarity 1 -> 5',
-        type: 'int | choices',
-        default: 'all',
-    },
-    custom_name: {
-        description:
-        'List of all the card that has the nickname.',
-        type: 'string',
-        default: 'pass',
-    },
-    is_locked: {
-        description:
-        'Filter all unlocked/locked cards. Empty = Display both locked/unlocked cards.',
-        type: 'boolean',
-        default: 'pass',
-    },
-    is_albumable: {
-        description:
-        'Check all available cards you could be added to the album.',
-        type: 'boolean',
-        default: 'pass',
-    },
-    has_badge: {
-        description:
-        'Check all available cards that have the badge.',
-        type: 'boolean',
-        default: 'pass',
-    },
-};
+# About
+Easily browse your card inventory, showing all the character cards you own—including standard, event-exclusive, and special cards. Sort by name or rarity, filter by rarity or event status, search by name or alias, and view duplicates or missing cards. A simple way to track and manage your collection right from Discord!
 
-<TypeTable type={types} />
+# Command Reference
+`/card collection (user, sort, event, series, card_name, rarity, custom_name, is_locked, is_albumable, has_badge)`
 
+### Parameters:
+#### user | *User* | optional
+View someone else's card collection! If not specified, defaults to you (the author of the command)
 
-| Example                       | Usage |
-| --------------------------------- | ----- |
-| `/card collection user: @testwak`  | Viewing your or another user's card colleciton.      |
+#### sort | *Choice* | Optional
+Determines the sorting order of the results. <br/>
+Allows for efficient browsing or strategic viewing (e.g., identifying top-tier cards). <br/>
+Available options may include:
 
-## About
-Lets you browse your cards inventory right, showing all the character cards you own (including standard, event exclusives, specials), with options to sort by name, rarity, filter by rarity or event status, search using names or aliases, and see dupes or missing cards! Making it easy to track and manage your collection everywhere on Discord.
+#### event | *Choice* | Optional
+Filters results to only show cards released during a specific event. <br/>
+Useful for collectors tracking limited-time or seasonal cards.
+
+#### series | *Text* | Optional
+Displays only cards that belong to a specific series or franchise. <br/>
+Partial matching is supported for convenience.
+
+#### card_name | *Text* | Optional
+Searches for cards by their display name or known **aliases**. <br/>
+Supports partial text matching to find cards even if the full name is unknown.
+
+#### rarity | *Choice/Integer* | Optional
+Limits the results to cards of a specified rarity tier. <br/>
+Ideal for users focusing on rare packing or building rarity-specific collections. <br/>
+Min 1 and max 5
+
+#### custom_name | *Text* | Optional
+Searches for cards that the user has renamed (custom-named cards). <br/>
+Helpful for identifying personalized or favorited cards.
+
+#### is_locked | *Boolean* | Optional
+Filters the collection by lock status: <br/>
+`true` – Only show locked (protected) cards <br/>
+`false` – Only show unlocked cards <br/>
+Useful for managing tradeable vs. secured cards.
+
+#### is_albumable | *Boolean* | Optional
+Returns only cards that are eligible (or ineligible) for album placement. <br/>
+Great for album curators trying to fill or organize sets.
+
+#### has_badge | *Boolean* | Optional
+Filter by badge status: <br/>
+`true` – Only show cards that have at least one badge <br/>
+`false` – Only show cards with no badges attached <br/>
+Supports tracking achievement-marked or special-status cards.
+
+<img src="/image/cmd_example/card-collection.png" className="w-100 rounded-lg" />
+
+<EditIcon/> Last edited: Thu 4 Sep 7:26PM Gmt+7

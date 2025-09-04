@@ -4,6 +4,7 @@ import { baseOptions } from '@/app/layout.config';
 import { source } from '@/lib/source';
 import { Suspense } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Banner } from 'fumadocs-ui/components/banner';
 
 const docsOptions: DocsLayoutProps = {
     ...baseOptions,
@@ -43,13 +44,17 @@ const docsOptions: DocsLayoutProps = {
 };
 
 export default function Layout({ children }: { children: ReactNode }) {
-    return (<DocsLayout {
-        ...docsOptions
-    }>  
-        <Suspense fallback={<Skeleton className="w-[100px] h-[20px] rounded-full" />}>
-            {children}
-        </Suspense>
+    return (
+    <>
+        <Banner changeLayout={false} id="banner-1" className='shadow-lg !bg-[#2b2d31]'>This documentation is not yet 100% complete!</Banner>
+        <DocsLayout {
+            ...docsOptions
+        }>             
+            <Suspense fallback={<Skeleton className="w-[100px] h-[20px] rounded-full" />}>
+                {children}
+            </Suspense>
         </DocsLayout>
+    </>
     
 )
 }

@@ -13,7 +13,7 @@ export function Body({
 
   return (
     <body className={cn(mode, 'relative flex min-h-screen flex-col')}>
-      {children}
+        {children}
     </body>
   );
 }

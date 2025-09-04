@@ -14,18 +14,20 @@ export default async function Page(props: {
     const MDXContent = page.data.body;
 
     return (
-        <DocsPage toc={page.data.toc} full={page.data.full} tableOfContent={{ style: 'clerk', single: true, }}>
-            <DocsTitle className='font-1' style={{ fontSize: "2.5em" }}>{page.data.title}</DocsTitle>
-            <DocsDescription>{page.data.description}</DocsDescription>
-            <DocsBody>
-                <MDXContent
-                    components={getMDXComponents({
-                        // this allows you to link to other pages with relative file paths
-                        a: createRelativeLink(source, page),
-                    })}
-                />
-            </DocsBody>
-        </DocsPage>
+        <>    
+            <DocsPage toc={page.data.toc} full={page.data.full} tableOfContent={{ style: 'clerk', single: true, }}>
+                <DocsTitle className='font-1' style={{ fontSize: "2.5em" }}>{page.data.title}</DocsTitle>
+                <DocsDescription>{page.data.description}</DocsDescription>
+                <DocsBody>
+                    <MDXContent
+                        components={getMDXComponents({
+                            // this allows you to link to other pages with relative file paths
+                            a: createRelativeLink(source, page),
+                        })}
+                    />
+                </DocsBody>
+            </DocsPage>
+        </>
     );
 }
 

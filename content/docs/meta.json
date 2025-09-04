@@ -1,4 +1,12 @@
-{   
-    "pages": ["introduction", "slash-commands"],
-    "icon": "home"
-}
+{
+    "pages": [
+      "---Introduction---",
+      "getting_started",
+      "tos",
+      "faq",
+      "thank_you",
+      "---Other---",
+      "aliases",
+      "slash-commands"
+    ]
+  }

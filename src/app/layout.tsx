@@ -5,7 +5,6 @@ import { Body } from 'src/app/layout.client';
 import { Provider } from './provider';
 import type { ReactNode } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
-import { Banner } from 'fumadocs-ui/components/banner';
 
 export const metadata = createMetadata({
     title: {
@@ -41,7 +40,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             suppressHydrationWarning
         >
             <Body>
-                <Banner changeLayout={false} id="banner-1">This documentation is not yet 100% complete!</Banner>
                 <Provider>{children}</Provider>
             </Body>
         </html>
