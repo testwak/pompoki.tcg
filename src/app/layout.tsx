@@ -15,20 +15,11 @@ export const metadata: Metadata = {
     },
     description: description,
     metadataBase: new URL('https://pompoki.vercel.app'),
+    icons: {
+        icon: '/icon.png',
+    },
     openGraph: {
         title: 'POMPOKI.tcg',
-        description: description,
-        url: 'https://pompoki.vercel.app',
-        siteName: 'POMPOKI.tcg',
-        type: 'website',
-        images: [
-            {
-                url: 'https://pompoki.vercel.app/image/logo.GIF', // your thumbnail
-                width: 400,
-                height: 400,
-                alt: 'POMPOKI.tcg thumbnail',
-            },
-        ],
     },
     twitter: {
         card: 'summary_large_image',
@@ -63,6 +54,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             suppressHydrationWarning
         >
             <Body>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            '@context': 'https://schema.org',
+                            '@type': 'WebSite',
+                            name: 'POMPOKI.tcg',
+                            alternateName: 'Pompoki',
+                            url: 'https://pompoki.vercel.app',
+                        }),
+                    }}
+                />
                 <Provider>{children}</Provider>
             </Body>
         </html>
